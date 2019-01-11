@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :songs, only: [:create, :update, :show, :index, :new, :edit]
+  resources :genres, only: [:create, :update, :show, :index, :new, :edit]
+  resources :artists, only: [:create, :update, :show, :index, :new, :edit]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
