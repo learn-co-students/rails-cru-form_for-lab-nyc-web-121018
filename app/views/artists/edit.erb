@@ -1,0 +1,8 @@
+<h1>Edit</h1>
+<%= form_for(@artist) do |a| %>
+<label>Genre Name:</label><br>
+<%= a.text_field :name %><br>
+<%= a.text_field :bio %><br>
+
+<%= a.submit %>
+<% end %>
