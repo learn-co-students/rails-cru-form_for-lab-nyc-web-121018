@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
+  resources :songs, except: :delete
+  resources :genres, except: :delete
+  resources :artists, except: :delete
+
+  get '/navigate', to: 'songs#index', as: 'navigate'
+
+    # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
