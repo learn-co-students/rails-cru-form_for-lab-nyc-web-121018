@@ -1,0 +1,3 @@
+<h1><%= @song.name %></h1>
+<h1 href = <%=genre_path(@song.genre_id)%>><%=Genre.find(@song.genre_id).name%><h1>
+<h1 href = <%=artist_path(@song.artist_id)%>><%=Artist.find(@song.artist_id).name%><h1>
