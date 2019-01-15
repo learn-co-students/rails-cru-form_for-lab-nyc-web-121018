@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :genres
+  resources :artists
+  resources :songs
+
+ # 
+ #  get '/navigate', to: "artists#show"
+ #
+ # patch '/artists/:id', to: "artists#update"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +62,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
